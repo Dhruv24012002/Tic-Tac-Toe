@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body {
+    font-family: 'Fredoka One', sans-serif;
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    color: #FAB201;
+}
+
+.title {
+    font-size: 3rem;
+    -webkit-text-stroke: 5px white;
+}
+
+.game {
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: center; /* Centering the cells horizontally */
+}
+
+.cell {
+    width: 80px; /* Adjusted width of the cells */
+    height: 80px; /* Adjusted height of the cells */
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px; /* Increased margin between cells */
+    box-shadow: 2px 2px silver;
+    cursor: pointer;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+.result {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    visibility: hidden;
+    opacity: 0;
+}
+
+#message {
+    font-size: 2.5rem;
+    color: white;
+}
+
+#button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #FAB201;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 2rem;
+        -webkit-text-stroke: 2px white;
+    }
+    .cell {
+        width: 60px;
+        height: 60px;
+    }
+    #message {
+        font-size: 2rem;
+    }
+    #button {
+        font-size: 1.2rem;
+    }
+}
